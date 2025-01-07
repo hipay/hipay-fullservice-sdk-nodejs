@@ -412,7 +412,7 @@ class HiPay {
     /**
      * Returns available payment products
      *
-     * @param {String} availablePaymentProductRequest The HiPay available payment product request
+     * @param {AvailablePaymentProductRequest | ConstructorParameters<typeof AvailablePaymentProductRequest>[0]} availablePaymentProductRequest The HiPay available payment product request
      * @returns {Promise<Array<import('./Gateway/Response/AvailablePaymentProduct')>>}
      */
     async requestAvailablePaymentProduct(availablePaymentProductRequest) {
